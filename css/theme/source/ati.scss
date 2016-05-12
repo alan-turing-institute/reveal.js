@@ -1,0 +1,72 @@
+/**
+ * A simple theme for reveal.js presentations from the ATI, similar
+ * to the default theme. 
+ *
+ * (c) 2016 James Geddes, https://github.com/alan-turing-institute. MIT licensed
+ *
+ * reveal.js is copyright (c) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+// @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// ATI colours
+
+        $colour_stone: rgb(250, 250, 220);
+  $colour_pale_yellow: rgb(240, 230, 153);
+$colour_bright_yellow: rgb(240, 217, 0);
+ $colour_muted_yellow: rgb(219, 206, 23);
+
+$colour_light_steel_blue: rgb(157, 181, 189);
+      $colour_steel_blue: rgb(58, 107, 123);
+ $colour_dark_steel_blue: rgb(0, 63, 78);
+           $colour_black: rgb(8, 8, 13);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Futura-Light', 'Futura', 'Trebuchet MS', 'Arial', sans-serif;   // Suggested by cssfontstack.com
+$mainColor: $colour_dark_steel_blue;
+$mainFontWeight: light;
+$mainFontSize: 32px;
+
+$headingFont: 'Futura', 'Trebuchet MS', 'Arial', sans-serif;
+$headingFontWeight: bold;
+$headingLetterSpacing: 0em; // .05em;
+$headingColor: $colour_dark_steel_blue;
+
+$headingTextShadow: none;
+$headingTextTransform: none;
+
+$headingScale: 1.2;
+$heading4Size: 1.00em;
+$heading3Size: $headingScale * $heading4Size;
+$heading2Size: $headingScale * $heading3Size;
+$heading1Size: $headingScale * $heading2Size;
+
+
+$backgroundColor: $colour_stone;
+$linkColor: $colour_steel_blue;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.reveal figcaption {
+    font-size: 0.6em;
+}
+
+.reveal blockquote {
+    font-style: normal;
+}
