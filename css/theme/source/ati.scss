@@ -52,7 +52,7 @@ $heading2Size: $headingScale * $heading3Size;
 $heading1Size: $headingScale * $heading2Size;
 
 
-$backgroundColor: $colour_stone;
+$backgroundColor: mix($colour_stone, white);
 $linkColor: $colour_steel_blue;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
