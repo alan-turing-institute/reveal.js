@@ -62,6 +62,7 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 @import "../template/theme";
 // ---------------------------------------------
 
+// Override some theme settings
 
 .reveal figcaption {
     font-size: 0.6em;
@@ -69,4 +70,8 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 .reveal blockquote {
     font-style: normal;
+}
+
+.reveal section img {
+    border: 1px solid $mainColor;
 }

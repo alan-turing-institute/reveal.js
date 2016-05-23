@@ -290,3 +290,6 @@ body {
 
 .reveal blockquote {
   font-style: normal; }
+
+.reveal section img {
+  border: 1px solid #003f4e; }
