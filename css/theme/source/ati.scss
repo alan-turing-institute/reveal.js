@@ -32,12 +32,12 @@ $colour_light_steel_blue: rgb(157, 181, 189);
 
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Futura-Light', 'Futura', 'Trebuchet MS', 'Arial', sans-serif;   // Suggested by cssfontstack.com
+$mainFont: 'futura-pt', 'Futura', 'Trebuchet MS', sans-serif;   // Suggested by cssfontstack.com
 $mainColor: $colour_dark_steel_blue;
 $mainFontWeight: light;
 $mainFontSize: 32px;
 
-$headingFont: 'Futura', 'Trebuchet MS', 'Arial', sans-serif;
+$headingFont: 'futura-pt-condensed', 'Futura', 'Trebuchet MS', sans-serif;
 $headingFontWeight: bold;
 $headingLetterSpacing: 0em; // .05em;
 $headingColor: $colour_dark_steel_blue;
