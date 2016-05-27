@@ -34,23 +34,25 @@ $colour_light_steel_blue: rgb(157, 181, 189);
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'futura-pt', 'Futura', 'Trebuchet MS', sans-serif;   // Suggested by cssfontstack.com
 $mainColor: $colour_dark_steel_blue;
-$mainFontWeight: light;
+$mainFontWeight: 300;
 $mainFontSize: 32px;
 
-$headingFont: 'futura-pt-condensed', 'Futura', 'Trebuchet MS', sans-serif;
-$headingFontWeight: bold;
+$headingFont: 'futura-pt', 'Futura', 'Trebuchet MS', sans-serif;
+$headingFontWeight: 700;
 $headingLetterSpacing: 0em; // .05em;
-$headingColor: $colour_dark_steel_blue;
-
+$headingColor: $colour_steel_blue;
 $headingTextShadow: none;
 $headingTextTransform: none;
 
+$titleFont: 'futura-pt-condensed', 'Futura', 'Trebuchet MS', sans-serif;
+$titleColor: $colour_dark_steel_blue;
+$titleFontWeight: bold;
+
 $headingScale: 1.2;
 $heading4Size: 1.00em;
-$heading3Size: $headingScale * $heading4Size;
-$heading2Size: $headingScale * $heading3Size;
-$heading1Size: $headingScale * $heading2Size;
-
+$heading3Size: $heading4Size;
+$heading2Size: $heading3Size;
+$heading1Size: $headingScale * $headingScale * $headingScale * $heading4Size;
 
 $backgroundColor: mix($colour_stone, white);
 $linkColor: $colour_steel_blue;
@@ -64,6 +66,12 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 // Override some theme settings
 
+.reveal h1 {
+    font-family: $titleFont;
+    color: $titleColor;
+    font-weight: $titleFontWeight;
+}
+    
 .reveal figcaption {
     font-size: 0.6em;
 }
